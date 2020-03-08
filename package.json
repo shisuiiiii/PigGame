@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shisuiiiii/PigGame/issues"
   },
-  "homepage": "https://github.com/shisuiiiii/PigGame.git#readme"
+  "homepage": "https://github.com/shisuiiiii/PigGame.git#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
 }
