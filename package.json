@@ -1,0 +1,19 @@
+{
+  "name": "piggie",
+  "version": "0.0.1",
+  "description": "https://en.wikipedia.org/wiki/Pig_(dice_game)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shisuiiiii/PigGame.git"
+  },
+  "author": "Shisui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shisuiiiii/PigGame/issues"
+  },
+  "homepage": "https://github.com/shisuiiiii/PigGame.git#readme"
+}
