@@ -4,7 +4,9 @@
   "description": "https://en.wikipedia.org/wiki/Pig_(dice_game)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint $PWD/'**/*.js'",
+    "format": "prettier-eslint --write $PWD/'**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,14 @@
   },
   "homepage": "https://github.com/shisuiiiii/PigGame.git#readme",
   "devDependencies": {
-    "eslint": "^6.8.0"
-  }
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
+  },
+  "dependencies": {}
 }
