@@ -1,6 +1,3 @@
-const src = 'src/app.js';
-const dist = 'dist';
-
 export default {
   input: 'src/app.js',
   output: [
