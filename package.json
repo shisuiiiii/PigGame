@@ -2,13 +2,12 @@
     "name": "piggie",
     "version": "0.0.1",
     "description": "https://en.wikipedia.org/wiki/Pig_(dice_game)",
-    "main": "index.js",
+    "main": "src/js/app.js",
     "scripts": {
         "clean": "rimraf dist",
         "build": "npm run clean && rollup -c",
         "lint": "eslint $PWD/'**/*.js'",
-        "format": "prettier-eslint --write $PWD/'**/*.js'",
-        "transpile": "babel"
+        "format": "prettier-eslint --write $PWD/'**/*.js'"
     },
     "husky": {
         "pre-commit": "lint-staged"
@@ -32,6 +31,7 @@
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.0",
+        "@babel/node": "^7.8.7",
         "@babel/preset-env": "^7.9.0",
         "@rollup/plugin-node-resolve": "^7.1.1",
         "eslint": "^6.8.0",
@@ -41,6 +41,7 @@
         "eslint-plugin-promise": "^4.2.1",
         "eslint-plugin-standard": "^4.0.1",
         "husky": "^4.2.3",
+        "jasmine": "^3.5.0",
         "lint-staged": "^10.1.1",
         "minimist": "^1.2.5",
         "prettier-eslint": "^9.0.1",
