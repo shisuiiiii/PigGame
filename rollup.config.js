@@ -1,8 +1,9 @@
 import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
+import html from 'rollup-plugin-html2';
 
 export default {
-  input: 'src/app.js',
+  input: 'src/js/app.js',
   output: [
     {
       file: 'dist/bundle.cjs.js',
@@ -22,6 +23,10 @@ export default {
     resolve(),
     babel({
       exclude: 'node_modules/**'
+    }),
+    html({
+      template: 'src/index.html',
+      fileName: 'app.html'
     })
   ]
 };
