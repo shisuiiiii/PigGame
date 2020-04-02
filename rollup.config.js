@@ -1,6 +1,7 @@
 import babel from 'rollup-plugin-babel';
 import resolve from '@rollup/plugin-node-resolve';
 import html from 'rollup-plugin-html2';
+import css from 'rollup-plugin-css-only';
 
 export default {
   input: 'src/js/app.js',
@@ -27,6 +28,9 @@ export default {
     html({
       template: 'src/index.html',
       fileName: 'app.html'
+    }),
+    css({
+      output: 'dist/css/bundle.css'
     })
   ]
 };
